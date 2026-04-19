@@ -434,6 +434,7 @@ section{padding:6rem 3rem;position:relative}
 }
 
 /* Careers / Jobs */
+.careers-intro{padding-bottom:2rem}
 .careers{background:var(--cream);padding:7rem 3rem}
 .careers-grid{
   display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem;
@@ -595,6 +596,7 @@ footer p{margin:.3rem 0}
   .menu-preview{padding:1.5rem}
   .menu-preview-grid{grid-template-columns:1fr}
   .set-badge{font-size:1.6rem;padding:1rem 1.5rem 1.5rem 2.5rem}
+  .careers-intro{padding-bottom:1rem}
   .careers{padding:4rem 1.5rem}
   .careers-grid{grid-template-columns:1fr;gap:1.5rem}
   .job-card{padding:1.8rem}
