@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Harmony Massage หาดใหญ่ — สปาและนวดไทย | Harmony Hatyai</title>
+<meta name="description" content="Harmony Massage สปานวดแผนไทย-น้ำมันหอมระเหย ในหาดใหญ่ สงขลา" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Prompt:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="logo">HARMO<span>NY</span></a>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="index.html" data-th="หน้าแรก" data-en="Home">หน้าแรก</a></li>
+    <li><a href="hotel.html" data-th="โรงแรม" data-en="Hotel">โรงแรม</a></li>
+    <li><a href="massage.html" class="active" data-th="นวด-สปา" data-en="Spa">นวด-สปา</a></li>
+    <li><a href="restaurant.html" data-th="ร้านอาหาร" data-en="Dining">ร้านอาหาร</a></li>
+    <li><a href="careers.html" data-th="สมัครงาน" data-en="Careers">สมัครงาน</a></li>
+    <li>
+      <div class="lang-toggle">
+        <button onclick="setLang('th')" id="btnTh" class="active">TH</button>
+        <button onclick="setLang('en')" id="btnEn">EN</button>
+      </div>
+    </li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="hero page-hero" style="background-image:url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2000&q=80')">
+  <div class="hero-content">
+    <span class="eyebrow" data-th="สปา · นวดแผนไทย" data-en="Spa · Thai Massage">สปา · นวดแผนไทย</span>
+    <h1 data-th="Harmony <em>Massage</em>" data-en="Harmony <em>Massage</em>">Harmony <em>Massage</em></h1>
+    <p data-th="ผ่อนคลายทั้งกายและใจ" data-en="Relax body and mind">ผ่อนคลายทั้งกายและใจ</p>
+  </div>
+</section>
+
+<!-- ===== MASSAGE DETAILS ===== -->
+<section class="detail-section dark">
+  <div class="container">
+    <div class="detail-grid reverse">
+      <div class="detail-img reveal" style="background-image:url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80')"></div>
+      <div class="detail-text reveal">
+        <span class="eyebrow" data-th="เกี่ยวกับสปา" data-en="About Our Spa">เกี่ยวกับสปา</span>
+        <h2 data-th="ศาสตร์แห่งการผ่อนคลาย" data-en="The Art of Relaxation">ศาสตร์แห่งการผ่อนคลาย</h2>
+        <div class="divider"></div>
+        <p data-th="ผ่อนคลายทั้งกายและใจด้วยศาสตร์การนวดไทยโบราณ เพิ่มพลังด้วยน้ำมันหอมระเหยคัดสรร ในห้องนวดบรรยากาศเงียบสงบ"
+           data-en="Relax body and mind with ancient Thai healing traditions and curated aromatherapy, in tranquil private suites.">
+          ผ่อนคลายทั้งกายและใจด้วยศาสตร์การนวดไทยโบราณ เพิ่มพลังด้วยน้ำมันหอมระเหยคัดสรร ในห้องนวดบรรยากาศเงียบสงบ
+        </p>
+        <ul class="features-list">
+          <li data-th="นวดแผนไทย 60/90 นาที — ฿700/฿1,000" data-en="Traditional Thai Massage 60/90 min — ฿700/฿1,000">นวดแผนไทย 60/90 นาที — ฿700/฿1,000</li>
+          <li data-th="นวดน้ำมันอโรมา 60/90 นาที — ฿900/฿1,300" data-en="Aromatherapy Oil 60/90 min — ฿900/฿1,300">นวดน้ำมันอโรมา 60/90 นาที — ฿900/฿1,300</li>
+          <li data-th="นวดหินร้อน 90 นาที — ฿1,500" data-en="Hot Stone 90 min — ฿1,500">นวดหินร้อน 90 นาที — ฿1,500</li>
+          <li data-th="Harmony Signature Package 2 ชม. — ฿2,200" data-en="Harmony Signature Package 2 hrs — ฿2,200">Harmony Signature Package 2 ชม. — ฿2,200</li>
+          <li data-th="เปิดบริการทุกวัน 10:00 – 22:00" data-en="Open daily 10:00 – 22:00">เปิดบริการทุกวัน 10:00 – 22:00</li>
+        </ul>
+        <a href="index.html?type=massage#booking" class="btn btn-gold" data-th="จองนวด" data-en="Book Treatment">จองนวด</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPA GALLERY ===== -->
+<section class="gallery center">
+  <div class="container">
+    <span class="eyebrow" data-th="ภาพบรรยากาศสปา" data-en="Spa Gallery">ภาพบรรยากาศสปา</span>
+    <h2 data-th="บรรยากาศในสปา" data-en="Spa Atmosphere">บรรยากาศในสปา</h2>
+    <div class="divider"></div>
+    <div class="gallery-grid">
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80')" data-full="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1800&q=90"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80')" data-full="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1800&q=90"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80')" data-full="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1800&q=90"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80')" data-full="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1800&q=90"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1614159102522-a83df0b51a51?auto=format&fit=crop&w=800&q=80')" data-full="https://images.unsplash.com/photo-1614159102522-a83df0b51a51?auto=format&fit=crop&w=1800&q=90"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="logo">HARMO<span style="color:var(--gold)">NY</span></a>
+  <div class="footer-quick">
+    <a href="index.html" data-th="หน้าแรก" data-en="Home">หน้าแรก</a>
+    <a href="hotel.html" data-th="โรงแรม" data-en="Hotel">โรงแรม</a>
+    <a href="massage.html" data-th="นวด-สปา" data-en="Spa">นวด-สปา</a>
+    <a href="restaurant.html" data-th="ร้านอาหาร" data-en="Dining">ร้านอาหาร</a>
+    <a href="careers.html" data-th="สมัครงาน" data-en="Careers">สมัครงาน</a>
+    <a href="tel:+66979957811">097-995-7811</a>
+  </div>
+  <div class="footer-line"></div>
+  <p data-th="243 ถ.แสงจันทร์ หาดใหญ่ สงขลา 90110" data-en="243 Sangchan Rd, Hat Yai, Songkhla 90110">243 ถ.แสงจันทร์ หาดใหญ่ สงขลา 90110</p>
+  <p style="margin-top:1rem">© 2026 Harmony Hatyai</p>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

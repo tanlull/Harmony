@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Harmony Hotel หาดใหญ่ — ห้องพักหรูหรา | Harmony Hatyai</title>
+<meta name="description" content="Harmony Hotel ห้องพัก Deluxe และ Suite Pool Villa ใจกลางหาดใหญ่ สงขลา" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Prompt:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="logo">HARMO<span>NY</span></a>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="index.html" data-th="หน้าแรก" data-en="Home">หน้าแรก</a></li>
+    <li><a href="hotel.html" class="active" data-th="โรงแรม" data-en="Hotel">โรงแรม</a></li>
+    <li><a href="massage.html" data-th="นวด-สปา" data-en="Spa">นวด-สปา</a></li>
+    <li><a href="restaurant.html" data-th="ร้านอาหาร" data-en="Dining">ร้านอาหาร</a></li>
+    <li><a href="careers.html" data-th="สมัครงาน" data-en="Careers">สมัครงาน</a></li>
+    <li>
+      <div class="lang-toggle">
+        <button onclick="setLang('th')" id="btnTh" class="active">TH</button>
+        <button onclick="setLang('en')" id="btnEn">EN</button>
+      </div>
+    </li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="hero page-hero" style="background-image:url('https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=2000&q=80')">
+  <div class="hero-content">
+    <span class="eyebrow" data-th="โรงแรม" data-en="Hotel">โรงแรม</span>
+    <h1 data-th="Harmony <em>Hotel</em>" data-en="Harmony <em>Hotel</em>">Harmony <em>Hotel</em></h1>
+    <p data-th="ห้องพักหรูหรา ใจกลางหาดใหญ่" data-en="Luxurious rooms in the heart of Hat Yai">ห้องพักหรูหรา ใจกลางหาดใหญ่</p>
+  </div>
+</section>
+
+<!-- ===== HOTEL DETAILS ===== -->
+<section class="detail-section">
+  <div class="container">
+    <div class="detail-grid">
+      <div class="detail-img reveal" style="background-image:url('https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80')"></div>
+      <div class="detail-text reveal">
+        <span class="eyebrow" data-th="เกี่ยวกับโรงแรม" data-en="About Our Hotel">เกี่ยวกับโรงแรม</span>
+        <h2 data-th="พักผ่อนในความสง่างาม" data-en="Rest in Elegance">พักผ่อนในความสง่างาม</h2>
+        <div class="divider"></div>
+        <p data-th="ห้องพักทุกห้องได้รับการออกแบบอย่างพิถีพิถัน ผสมผสานความทันสมัยเข้ากับกลิ่นอายไทย พร้อมระเบียงส่วนตัวและวิวที่น่าประทับใจ"
+           data-en="Every room is meticulously designed, blending contemporary elegance with Thai warmth, featuring private balconies and captivating views.">
+          ห้องพักทุกห้องได้รับการออกแบบอย่างพิถีพิถัน ผสมผสานความทันสมัยเข้ากับกลิ่นอายไทย พร้อมระเบียงส่วนตัวและวิวที่น่าประทับใจ
+        </p>
+        <ul class="features-list">
+          <li data-th="ห้อง Deluxe เริ่มต้น ฿2,500/คืน" data-en="Deluxe Room from ฿2,500/night">ห้อง Deluxe เริ่มต้น ฿2,500/คืน</li>
+          <li data-th="Suite Pool Villa ฿8,900/คืน" data-en="Suite Pool Villa ฿8,900/night">Suite Pool Villa ฿8,900/คืน</li>
+          <li data-th="อาหารเช้าบุฟเฟ่ต์ ฟิตเนส สระว่ายน้ำ" data-en="Breakfast buffet · Fitness · Pool">อาหารเช้าบุฟเฟ่ต์ ฟิตเนส สระว่ายน้ำ</li>
+          <li data-th="Wi-Fi ความเร็วสูง · ที่จอดรถฟรี" data-en="High-speed Wi-Fi · Free parking">Wi-Fi ความเร็วสูง · ที่จอดรถฟรี</li>
+          <li data-th="เช็คอิน 14:00 · เช็คเอาท์ 12:00" data-en="Check-in 14:00 · Check-out 12:00">เช็คอิน 14:00 · เช็คเอาท์ 12:00</li>
+        </ul>
+        <a href="index.html?type=hotel#booking" class="btn btn-dark" data-th="จองห้องพัก" data-en="Book a Room">จองห้องพัก</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ROOM GALLERY ===== -->
+<section class="gallery center">
+  <div class="container">
+    <span class="eyebrow" data-th="ภาพห้องพัก" data-en="Room Gallery">ภาพห้องพัก</span>
+    <h2 data-th="บรรยากาศห้องพัก" data-en="Room Atmosphere">บรรยากาศห้องพัก</h2>
+    <div class="divider"></div>
+    <div class="gallery-grid">
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80')" data-full="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1800&q=90"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80')" data-full="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1800&q=90"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80')" data-full="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1800&q=90"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80')" data-full="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1800&q=90"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80')" data-full="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1800&q=90"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <a href="index.html" class="logo">HARMO<span style="color:var(--gold)">NY</span></a>
+  <div class="footer-quick">
+    <a href="index.html" data-th="หน้าแรก" data-en="Home">หน้าแรก</a>
+    <a href="hotel.html" data-th="โรงแรม" data-en="Hotel">โรงแรม</a>
+    <a href="massage.html" data-th="นวด-สปา" data-en="Spa">นวด-สปา</a>
+    <a href="restaurant.html" data-th="ร้านอาหาร" data-en="Dining">ร้านอาหาร</a>
+    <a href="careers.html" data-th="สมัครงาน" data-en="Careers">สมัครงาน</a>
+    <a href="tel:+66979957811">097-995-7811</a>
+  </div>
+  <div class="footer-line"></div>
+  <p data-th="243 ถ.แสงจันทร์ หาดใหญ่ สงขลา 90110" data-en="243 Sangchan Rd, Hat Yai, Songkhla 90110">243 ถ.แสงจันทร์ หาดใหญ่ สงขลา 90110</p>
+  <p style="margin-top:1rem">© 2026 Harmony Hatyai</p>
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="" />
+</div>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

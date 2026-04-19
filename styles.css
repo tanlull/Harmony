@@ -429,6 +429,22 @@ section{padding:6rem 3rem;position:relative}
 }
 .job-apply:hover{background:var(--gold);color:var(--ink)}
 
+/* Apply info block (careers page) */
+.apply-info{
+  max-width:760px;margin:4rem auto 0;text-align:center;
+  padding:3rem 2rem;background:#fff;
+  border:1px solid rgba(13,13,13,.08);
+}
+.apply-info h3{
+  font-family:'Cormorant Garamond',serif;font-weight:400;
+  font-size:1.8rem;color:var(--ink);margin-bottom:.5rem;
+}
+.apply-info .divider{margin-left:auto;margin-right:auto}
+.apply-info p{color:var(--muted);margin-bottom:1.5rem;line-height:1.8}
+.apply-contacts{
+  display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;
+}
+
 /* Gallery */
 .gallery{background:var(--cream)}
 .gallery-grid{
