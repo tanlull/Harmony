@@ -72,24 +72,24 @@ body.home .nav.scrolled{
   font-weight:500;
   color:var(--cream);
   text-decoration:none;
-  display:inline-flex;
-  flex-direction:column;
-  align-items:flex-start;
+  display:inline-block;
   line-height:1;
   white-space:nowrap;
 }
 .logo-word{
   letter-spacing:.2em;
-  display:block;
+  display:inline-block;
 }
 .logo span{color:var(--gold)}
-.logo small{
-  margin-top:.35rem;
-  font-family:var(--sans);
-  font-size:.52rem;
-  font-weight:400;
-  letter-spacing:.48em;
+.logo-city{
   color:var(--gold-light);
+  margin-left:.2em;
+  font-family:var(--serif);
+  font-size:1em;
+  font-weight:400;
+  font-style:italic;
+  letter-spacing:.08em;
+  vertical-align:baseline;
 }
 .nav-menu{
   display:flex;gap:2.5rem;list-style:none;align-items:center;
