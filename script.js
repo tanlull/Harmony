@@ -57,22 +57,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
   }, {threshold: .15});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-  /* Min date for booking */
-  const dateInput = document.querySelector('input[name="date"]');
-  if(dateInput){
-    dateInput.min = new Date().toISOString().split('T')[0];
-  }
-
-  /* Pre-select booking type from URL ?type=hotel|massage|restaurant */
-  const typeSelect = document.querySelector('select[name="type"]');
-  if(typeSelect){
-    const params = new URLSearchParams(window.location.search);
-    const type = params.get('type');
-    if(type && ['hotel','massage','restaurant'].includes(type)){
-      typeSelect.value = type;
-    }
-  }
-
   /* Restore language preference */
   try{
     const saved = localStorage.getItem('harmony_lang');
@@ -85,16 +69,6 @@ function closeLightbox(){
   if(lb) lb.classList.remove('active');
 }
 
-/* ===== Booking form ===== */
-function handleBooking(e){
-  e.preventDefault();
-  const lang = document.documentElement.lang;
-  const msg = lang === 'en'
-    ? '✓ Reservation received! We will contact you within 24 hours.'
-    : '✓ รับการจองแล้ว! ทีมงานจะติดต่อกลับภายใน 24 ชม.';
-  showToast(msg);
-  e.target.reset();
-}
 function showToast(text){
   const t = document.getElementById('toast');
   if(!t) return;

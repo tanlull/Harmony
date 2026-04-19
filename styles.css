@@ -71,10 +71,26 @@ body.home .nav.scrolled{
   font-size:1.8rem;
   font-weight:500;
   color:var(--cream);
-  letter-spacing:.2em;
   text-decoration:none;
+  display:inline-flex;
+  flex-direction:column;
+  align-items:flex-start;
+  line-height:1;
+  white-space:nowrap;
+}
+.logo-word{
+  letter-spacing:.2em;
+  display:block;
 }
 .logo span{color:var(--gold)}
+.logo small{
+  margin-top:.35rem;
+  font-family:var(--sans);
+  font-size:.52rem;
+  font-weight:400;
+  letter-spacing:.48em;
+  color:var(--gold-light);
+}
 .nav-menu{
   display:flex;gap:2.5rem;list-style:none;align-items:center;
 }
@@ -215,7 +231,7 @@ section{padding:6rem 3rem;position:relative}
 }
 .about-image{
   position:relative;height:500px;
-  background:url('https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1000&q=80') center/cover;
+  background:url('photos/restaurant/photo/173058_0.jpg') center/cover;
   box-shadow:var(--shadow);
 }
 .about-image::before{
@@ -369,6 +385,54 @@ section{padding:6rem 3rem;position:relative}
   text-align:left;font-size:.9rem;color:var(--muted);
 }
 
+.menu-preview{
+  margin-top:3.5rem;
+  padding:2.5rem;
+  background:linear-gradient(180deg, rgba(201,169,97,.08), rgba(255,255,255,.72));
+  border:1px solid rgba(201,169,97,.3);
+  box-shadow:var(--shadow);
+  text-align:left;
+}
+.menu-preview-heading{
+  max-width:760px;
+  margin-bottom:2rem;
+}
+.menu-preview-heading h3{
+  margin-bottom:.8rem;
+  color:var(--ink);
+}
+.menu-preview-heading p{
+  color:var(--muted);
+  line-height:1.8;
+}
+.menu-preview-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.5rem;
+}
+.menu-preview-card{
+  background:#fff;
+  border:1px solid rgba(13,13,13,.08);
+  overflow:hidden;
+}
+.menu-preview-image{
+  aspect-ratio:4/3;
+  background-size:cover;
+  background-position:center;
+}
+.menu-preview-body{
+  padding:1.25rem 1.25rem 1.4rem;
+}
+.menu-preview-body h4{
+  margin-bottom:.55rem;
+  color:var(--ink);
+}
+.menu-preview-body p{
+  color:var(--muted);
+  font-size:.92rem;
+  line-height:1.7;
+}
+
 /* Careers / Jobs */
 .careers{background:var(--cream);padding:7rem 3rem}
 .careers-grid{
@@ -479,44 +543,6 @@ section{padding:6rem 3rem;position:relative}
   font-family:var(--serif);
 }
 
-/* Booking Form */
-.booking{
-  background:
-    linear-gradient(rgba(13,13,13,.85),rgba(13,13,13,.9)),
-    url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=80') center/cover fixed;
-  color:var(--cream);padding:8rem 3rem;
-}
-.booking h2{color:var(--cream)}
-.booking-wrap{max-width:900px;margin:0 auto}
-.booking-form{
-  background:rgba(26,26,26,.7);
-  border:1px solid rgba(201,169,97,.3);
-  padding:3rem;margin-top:3rem;
-  backdrop-filter:blur(10px);
-}
-.form-row{
-  display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:1.2rem;
-}
-.form-field{display:flex;flex-direction:column}
-.form-field label{
-  font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;
-  color:var(--gold);margin-bottom:.5rem;
-}
-.form-field input,
-.form-field select,
-.form-field textarea{
-  background:transparent;border:none;border-bottom:1px solid rgba(201,169,97,.4);
-  color:var(--cream);padding:.7rem 0;font-family:var(--sans);font-size:.95rem;
-  transition:border-color .3s;
-}
-.form-field input:focus,
-.form-field select:focus,
-.form-field textarea:focus{outline:none;border-bottom-color:var(--gold)}
-.form-field select{cursor:pointer}
-.form-field select option{background:var(--ink);color:var(--cream)}
-.form-field.full{grid-column:1/-1}
-.form-submit{text-align:center;margin-top:2rem}
-
 /* Footer */
 footer{
   background:var(--ink);color:#8a8272;text-align:center;
@@ -566,6 +592,8 @@ footer p{margin:.3rem 0}
   .services-grid{grid-template-columns:1fr}
   .menu-grid{grid-template-columns:1fr;gap:2rem}
   .sets-wrap{grid-template-columns:1fr;gap:1.5rem}
+  .menu-preview{padding:1.5rem}
+  .menu-preview-grid{grid-template-columns:1fr}
   .set-badge{font-size:1.6rem;padding:1rem 1.5rem 1.5rem 2.5rem}
   .careers{padding:4rem 1.5rem}
   .careers-grid{grid-template-columns:1fr;gap:1.5rem}
@@ -575,7 +603,5 @@ footer p{margin:.3rem 0}
   .gallery-item:nth-child(1){grid-column:span 2;grid-row:span 1}
   .form-row{grid-template-columns:1fr}
   .about-stats{gap:1.5rem;flex-wrap:wrap}
-  .booking{padding:5rem 1.5rem}
-  .booking-form{padding:2rem 1.5rem}
   .hero-badges{gap:1.5rem}
 }
